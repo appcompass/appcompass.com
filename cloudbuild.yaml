@@ -1,0 +1,22 @@
+steps:
+- name: 'gcr.io/cloud-builders/npm'
+  id: Install
+  args:
+  - 'ci'
+  waitFor:
+  - '-'
+- name: 'gcr.io/cloud-builders/npm'
+  id: Lint
+  args:
+  - 'run'
+  - 'lint'
+  waitFor:
+  - 'Install'
+- name: 'gcr.io/cloud-builders/npm'
+  id: Unit Tests
+  args:
+  - 'run'
+  - 'test:unit'
+  waitFor:
+  - 'Install'
+
