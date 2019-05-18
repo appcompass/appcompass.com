@@ -9,12 +9,17 @@
     "test:unit": "vue-cli-service test:unit"
   },
   "dependencies": {
+    "axios": "^0.18.0",
     "core-js": "^2.6.5",
+    "lodash": "^4.17.11",
     "vue": "^2.6.10",
     "vue-class-component": "^7.0.2",
     "vue-property-decorator": "^8.1.0",
     "vue-router": "^3.0.3",
-    "vuex": "^3.0.1"
+    "vuex": "^3.0.1",
+    "vuex-class": "^0.3.2",
+    "vuex-module-decorators": "^0.9.9",
+    "vuex-router-sync": "^5.0.0"
   },
   "devDependencies": {
     "@types/chai": "^4.1.0",
@@ -34,6 +39,7 @@
     "sass": "^1.18.0",
     "sass-loader": "^7.1.0",
     "typescript": "^3.4.3",
+    "vue-cli-plugin-pug": "^1.0.7",
     "vue-template-compiler": "^2.5.21"
   }
 }
