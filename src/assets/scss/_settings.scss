@@ -1,0 +1,67 @@
+/* ==========================================================================
+	SETTINGS
+=========================================================================== */
+
+///------------------------------------------------------------------------
+///		FUNCTIONS
+///------------------------------------------------------------------------
+
+// EM CALCULATION
+$base-font: 18px;
+@function em($target, $context: $base-font) {
+   @if $target == 0 { @return 0 }
+   @return $target / $context + 0em;
+}
+
+///------------------------------------------------------------------------
+///		VARIABLES
+///------------------------------------------------------------------------
+
+// GRID WIDTHS
+$max-container-width: 790px;
+$max-row-width: 1460px;
+
+// GRID BREAKPOINTS
+$break-large: 1200px;
+$break-medium: 992px;
+$break-small: 768px;
+$break-xsmall: $break-small - 1px;
+
+// GRID GUTTERS
+$gutter-xsmall: 30px;
+$gutter-small: $gutter-xsmall;
+$gutter-medium: $gutter-xsmall;
+$gutter-large: $gutter-xsmall;
+$columns: 12;
+
+// STYLE BREAKPOINTS
+
+
+// PATH VARIABLES
+$assets: "../images"; //use #{$assets}
+
+// COLORS
+$blue: #345ab4;
+$grey: #f1f1f1;
+$text-color: #666666;
+$heading-color: #000000;
+$link-color: $blue;
+$hover-color: mix(black, $blue, 20%);
+$border-color:$grey;
+
+// FORMS
+$input-height: 60px;
+$input-background-color: $grey;
+$input-text-color: $text-color;
+$placeholder-color: #999;
+$btn-color: $link-color;
+
+
+///------------------------------------------------------------------------
+/// 	FONTS
+///------------------------------------------------------------------------
+
+%default-font, 
+%source-pro {
+	font-family: 'Source Sans Pro', sans-serif;
+}
