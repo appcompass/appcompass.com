@@ -27,7 +27,7 @@
     "@types/chai": "^4.1.7",
     "@types/mocha": "^5.2.6",
     "@vue/cli-plugin-babel": "^3.7.0",
-    "@vue/cli-plugin-eslint": "^3.7.0",
+    "@vue/cli-plugin-eslint": "^4.5.11",
     "@vue/cli-plugin-typescript": "^3.7.0",
     "@vue/cli-plugin-unit-mocha": "^3.7.0",
     "@vue/cli-service": "^3.7.0",
